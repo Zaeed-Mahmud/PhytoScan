@@ -1,0 +1,159 @@
+{% include 'header.html' %} 
+{%load static%}
+	<div id="wrapper">
+		<div class="promo disease">
+			<div class="max-container">
+				<div class="img">
+					<img src="{% static 'images/upload.jpg' %}" alt="image description">
+				</div>
+				<div class="holder">
+					<div class="frame">
+						<div class="box">
+							<div class="heading">
+								<h1>prediction status</h1>
+								<h2>Result</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main id="main" role="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+
+						<div class="gallery">
+							<div class="img"><img src="/media/image.jpg">
+						
+								
+							</div>
+
+						
+						
+							<div class="text">
+                                {% if result == "Prediction : Rice Brown Spot" %}
+								<h2>{{ result }}</h2>
+								<p>Solution for Rice Brown Spot . Lorem ipsum dolor sit amet,
+                                     an consectetur adipisicing elit, sed do eiusmod tempor 
+                                     incididunt uteax labore et dolore magna aliqua. Ut enim
+                                      ad minim veniam, quisated nostrud exercitation 
+                                      ullamconted laboris nisi ut aliquip ex eating a 
+                                      commodo consequat. Duis aute irure dolor in 
+                                      reprehenderit in voluptate.
+                                    </p>
+									<dl>
+										<dt>Accuracy :</dt>
+										<dd>{{Accuracy}} % </dd>
+										<dt>Image status:</dt>
+										<dd>
+											{% if invalide == "Invalid_Image" %}
+											<p style="color: rgb(224, 0, 0);" >{{invalide}}</p>
+											{% else %}
+											<p style="color: #08CC6D;">{{invalide}}</p>
+											{% endif %}
+										</dd>
+									
+								
+									</dl>
+
+                                {% elif result == "Prediction : Corn Common Rust" %}
+								<h2>{{ result }}</h2>
+								<p>Solution for Corn Common Rust . Lorem ipsum dolor sit amet,
+                                     an consectetur adipisicing elit, sed do eiusmod tempor 
+                                     incididunt uteax labore et dolore magna aliqua. Ut enim
+                                      ad minim veniam, quisated nostrud exercitation 
+                                      ullamconted laboris nisi ut aliquip ex eating a 
+                                      commodo consequat. Duis aute irure dolor in 
+                                      reprehenderit in voluptate.
+                                    </p>
+
+                                    {% elif result == "Prediction : Potato Late Blight" %}
+                                    <h2>{{ result }}</h2>
+                                    <p>Solution for Potato Late Blight . Lorem ipsum dolor sit amet,
+                                         an consectetur adipisicing elit, sed do eiusmod tempor 
+                                         incididunt uteax labore et dolore magna aliqua. Ut enim
+                                          ad minim veniam, quisated nostrud exercitation 
+                                          ullamconted laboris nisi ut aliquip ex eating a 
+                                          commodo consequat. Duis aute irure dolor in 
+                                          reprehenderit in voluptate.
+                                        </p>
+
+                                    {% else %}
+                                    <h2 >{{ result }}</h2>
+                                    <p> No solution is needed to keep your crops healthy
+                                        </p>
+                                      
+								
+                                <dl>
+									<dt>Accuracy :</dt>
+									<dd>{{Accuracy}} % </dd>
+									<dt>Image status:</dt>
+									<dd>
+										{% if invalide == "Invalid_Image" %}
+										<p style="color: rgb(224, 0, 0);" >{{invalide}}</p>
+										{% else %}
+										<p style="color: #08CC6D;">{{invalide}}</p>
+										{% endif %}
+									</dd>
+								
+							
+                                </dl>
+								{% endif %}
+							</div>
+						
+	
+						</div>
+						<div class="masonry-holder">			
+							<h2><br>Related plant</h2>
+							<ul class="masonry add">
+								<li>
+									<div class="holder">
+										<div class="img"> 
+											<img src="{% static 'images/rice 2.jpg' %}" alt="image description">
+										</div>
+										<div class="caption">
+											<div class="c1">
+												<div class="c2">
+													<strong class="title">rice</strong>												
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="holder">
+										<div class="img">
+											<img src="{% static 'images/potato 2.jpg' %}"  alt="image description">
+										</div>		
+										<div class="caption">
+											<div class="c1">
+												<div class="c2">
+													<strong class="title">potato</strong>												
+												</div>
+											</div>
+										</div>							
+									</div>
+								</li>
+								<li>
+									<div class="holder">
+										<div class="img">
+											<img src="{% static 'images/corn 2.jpg' %}"  alt="image description">
+										</div>
+										<div class="caption">
+											<div class="c1">
+												<div class="c2">
+													<strong class="title">corn</strong>												
+												</div>
+											</div>
+										</div>
+									
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		{% include 'footer.html' %} 

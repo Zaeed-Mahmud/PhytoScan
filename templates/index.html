@@ -1,0 +1,238 @@
+{%load static%}
+{% include 'header.html' %} 
+		<main id="main">
+			<div class="visual">
+				<div class="max-container">
+					<div class="slideshow" id="main-slider">
+						<div class="slide">
+							<div class="caption">
+								<div class="text">
+									<span class="txt">FIND DISEASE of</span>
+									<h1><span class="icon">#</span><span class="light">rice</span> <span class="add">growth</span> <span class="add2">farming</span></h1>
+								</div>
+							</div>
+							<div class="image">
+								
+								<img src="{% static 'images/rice.jpg' %}" alt="image description">
+							</div>
+							<span class="box"></span>
+						</div>
+						<div class="slide">
+							<div class="caption">
+								<div class="text">
+									<span class="txt">FIND DISEASE of</span>
+									<h1><span class="icon">#</span><span class="light">potato</span> <span class="add">growth</span> <span class="add2">farming</span></h1>
+								</div>
+							</div>
+							<div class="image">
+								<img src="{% static 'images/potato.jpg' %}" alt="image description">
+							</div>
+							<span class="box"></span>				
+						</div>
+						<div class="slide">
+							<div class="caption">
+								<div class="text">
+									<span class="txt">FIND DISEASE of</span>
+									<h1><span class="icon">#</span><span class="light">corn</span> <span class="add">growth</span> <span class="add2">farming</span></h1>
+								</div>
+							</div>
+							<div class="image">
+								<img src="{% static 'images/corn.jpg' %}" alt="image description">
+							</div>
+							<span class="box"></span>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="max-container">
+				<div class="info-holder">
+					<div id="about" class="info">
+						<div class="img-frame wow fadeInLeft" data-wow-delay="0.6s">
+							<div class="text">
+								<span class="num">01</span>
+								<h2 class="tild">WELCOME</h2>
+								<div class="box">
+									<div class="box-inner">
+										<h3>Phyto Scan</h3>
+										<p>Infromation</p>
+									</div>
+								</div>
+							</div>
+							<div class="image wow fadeInRight" data-wow-delay="0.6s"><img src="{% static 'images/phyto.jpg' %}" alt="image description"></div>
+						</div>
+						<div class="txt-frame wow fadeInUp" data-wow-delay="0.6s">
+							<h3>About</h3>
+							<p>Welcome to our Crop Disease Detection App, leveraging advanced machine learning for swift identification of six key crop diseases: Rice Brown Spot, Corn Common Rust, Rice Healthy, Corn Healthy, Potato Late Blight, and Potato Healthy. Designed with simplicity in mind, this user-friendly app empowers farmers to capture and analyze crop images instantly. Stay ahead with timely insights for healthier yields. We're committed to growth, with plans to include more crops and diseases in the future. Download now and redefine your approach to precision farming.</p>
+							<div class="signature">
+								<img src="{% static 'images/phytoscan.svg' %}" alt="signature">
+							</div>
+						</div>
+					</div>
+					<div id="INSTRUCTION" class="info team">
+						<div class="txt-frame wow fadeInUp" data-wow-delay="0.6s">
+							<ul class="text-box">
+								<li>
+									<h2><a href="#">INSTRUCTION</a></h2>
+									<span>FOLLOW THESE STEP</span>
+									
+									<i class="icon-search"></i><a style="color:#08CC6D ;" href="/upload">PREDICT DISEASE</a>	 									
+								</li>
+								<li>
+									<p>
+										• Take photo in good lighting<br>
+										• Capture clear details<br>
+										• Use Plain background<br>
+										• Capture entire affected
+									</p>
+								</li>
+							</ul>
+		
+					
+							<div class="img-holder wow fadeInUp" data-wow-delay="0.5s">
+						
+								<div class="box box2">
+									<div class="img"><a><img src="{% static 'images/rice-brownspot.jpg' %}" alt="image description"></a></div>
+									<div class="txt-box">
+										<h3><a >Brown Spot</a></h3>
+										<span class="designation">Rice brown spot</span>
+										
+									</div>
+								</div>
+								<div class="box box3">
+									<div class="img"><a><img src="{% static 'images/rice-healthy.jpg' %}" alt="image description"></a></div>
+									<div class="txt-box">
+										<h3><a>Healthy</a></h3>
+										<span class="designation">Healthy Rice</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="img-frame">
+							<div class="image wow fadeInRight" data-wow-delay="0.6s"><a>
+								<img src="{% static 'images/rice-3.jpg' %}" alt="image description" class="team1-img">
+							</a></div>
+							<div class="text wow fadeInRight" data-wow-delay="0.3s">
+								<h2 class="tild">HOW TO USE</h2>
+								<span class="num">02</span>
+								<a class="more">GUIDELINES</a>
+							</div>
+						</div>
+					</div>
+
+							<div class="info diseaseview">
+								<div class="txt-frame wow fadeInLeft" data-wow-delay="0.6s">
+									<h2 class="tild">VIEW DISEASE</h2>
+									<span class="num">03</span>
+									<a href="#" class="more">Preview</a>
+								</div>
+								<div class="img-frame wow fadeInUp" data-wow-delay="0.6s">
+									<div class="slider">
+										<div class="mask">
+											<div class="slide">
+												<blockquote>											
+													<cite>
+														<span class="heading4">Rice</span>
+														<span class="designation">Brown spot</span>
+													</cite>
+													<br>
+													<q>“Brown spot is a fungal disease that infects the coleoptile, leaves, leaf sheath, panicle branches, glumes, and spikelets.”</q>
+												</blockquote>
+												<div class="images">
+													<img src="{% static 'images/rice-brownspot2.jpg' %}" alt="image description">
+												</div>
+											</div>
+											<div class="slide">
+												<blockquote>											
+													<cite>
+														<span class="heading4">Corn</span>
+														<span class="designation">Common Rust</span>
+													</cite>
+													<br>
+													<q>“Common rust is caused by the fungus Puccinia sorghi and occurs every growing season.”</q>
+												</blockquote>
+												<div class="images">
+													<img src="{% static 'images/common rust.jpg' %}" alt="image description">
+												</div>
+											</div>
+											<div class="slide">
+												<blockquote>													
+													<cite>
+														<span class="heading4">Potato</span>
+														<span class="designation">Late Blight</span>
+													</cite>
+													<br>
+													<q>“Late blight is a potentially devastating disease of potato, infecting leaves, stems, potato tubers.”</q>
+												</blockquote>
+												<div class="images">
+													<img src="{% static 'images/potato LATE BLIGHT.jpg' %}" alt="image description">
+												</div>
+											</div>
+										</div>
+										<div class="pagination">
+											<ul class="mask-inner">
+												<li>
+													<a href="#"><img src="{% static 'images/rice-brownspot2.jpg' %}" alt="image description"></a>
+												</li>
+												<li>
+													<a href="#"><img src="{% static 'images/common rust.jpg' %}" alt="image description"></a>
+												</li>
+												<li class="active">
+													<a href="#"><img src="{% static 'images/potato LATE BLIGHT.jpg' %}" alt="image description"></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+					<div class="info crop">
+						<div class="txt-frame">
+							<ul class="services">
+								<li class="wow fadeInUp" data-wow-delay="0.6s">
+									<h3>
+										<span>Rice Brown Spot</span>
+									</h3>
+									<p>Rice plants affected by brown spot disease, showing small dark lesions on leaves; effective management involves cultural practices and fungicides.</p>
+								</li>
+								<li class="wow fadeInUp" data-wow-delay="0.6s">
+									<h3>
+										<span>Corn Common Rust</span>
+									</h3>
+									<p>Corn plants with common rust, characterized by orange-red pustules on leaves; modern varieties often resistant, and fungicides can be used for control.</p>
+								</li>
+								<li class="wow fadeInUp" data-wow-delay="0.6s">
+									<h3>
+										<span>Rice Healthy</span>
+									</h3>
+									<p>Vigorous and disease-free rice plants, indicative of proper crop management and optimal growing conditions.</p>
+								</li>
+								<li class="wow fadeInUp" data-wow-delay="0.6s">
+									<h3>
+										<span>Potato Late Blight</span>
+									</h3>
+									<p>Potato plants affected by late blight, a destructive fungal disease causing water-soaked lesions; management includes resistant varieties and fungicides.</p>
+								</li>
+								<li class="wow fadeInUp" data-wow-delay="0.6s">
+									<h3>
+										<span>Corn Healthy</span>
+									</h3>
+									<p>Healthy corn plants with optimal growth and no disease symptoms, reflecting good agricultural practices.</p>
+								</li>
+								<li class="wow fadeInUp" data-wow-delay="0.6s">
+									<h3>
+										<span>Potato Healthy</span>
+									</h3>
+									<p>Disease-free and robust potato plants, showcasing vitality through proper soil management and pest control.</p>
+								</li>		
+							</ul>
+						</div>
+						<div class="img-frame wow fadeInRight" data-wow-delay="0.6s">
+							<h2 style="padding-left: 20%;" class="tild">     DISEASE</h2>
+							<span class="num">04</span>
+							<a class="more">Disease List</a>
+						</div>
+					</div>
+{% include 'footer.html' %} 							
+				
+		
